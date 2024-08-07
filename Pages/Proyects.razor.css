@@ -1,0 +1,27 @@
+﻿
+.proyects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    background-color: #663366;
+}
+.imgproyects {
+    width: 100%;
+    height: 100%;
+    background: right no-repeat fixed url("/assets/img-proyectos.jpg");
+    background-size: contain;
+    transition: width 3s ease;
+}
+.proyectos {
+    width: 0%;
+    height: 100%;
+    background-color: #663366;
+    transition: width 3s ease;
+    
+}
+.textproyects {
+    width:100%;
+    margin-left: 50px;
+    cursor: pointer;
+}

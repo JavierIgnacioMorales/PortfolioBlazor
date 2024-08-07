@@ -1,5 +1,25 @@
-﻿<h3>AboutMy</h3>
+﻿@inject IJSRuntime JS
+
+<div class="aboutme">
+   
+    <div class="textaboutme" @onclick="ToggleImage">
+        <h1>Hacerca de mi</h1>
+    </div>
+
+    <div class="imgaboutme"></div>
+    
+</div>
+
 
 @code {
+    private bool isImageVisible = false;
+    private ElementReference imageRef;
 
+    private async Task ToggleImage()
+    {
+        isImageVisible = !isImageVisible;
+        await JS.InvokeVoidAsync("toggleImage", isImageVisible);
+    }
 }
+
+<script src="site.js"></script>
