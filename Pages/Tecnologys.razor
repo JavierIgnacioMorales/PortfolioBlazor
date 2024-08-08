@@ -1,22 +1,27 @@
 ﻿@inject IJSRuntime JS
 
 <div class="tecnology">
-
-    <div class="texttecnology" @onclick="a">
-        <div class="imgtecnology"></div>
+    <div class="alltecnology">
+        <h1>acá las tecnologías</h1>
+    </div>
+    <div class="texttecnology" @onclick="toggleTecnology">
         <h1>Herramientas que manejo</h1>
     </div>
+     <div class="contimagen">
+        <div class="imgtecnology"></div> 
+    </div> 
+    
 </div>
 
 
 @code {
-    private bool isImageVisible = false;
+    private bool isTecnoVisible = false;
     private ElementReference imageRef;
 
-    private async Task a()
+    private async Task toggleTecnology()
     {
-        // isImageVisible = !isImageVisible;
-        // await JS.InvokeVoidAsync("toggleImage", isImageVisible);
+        isTecnoVisible = !isTecnoVisible;
+        await JS.InvokeVoidAsync("toggleTecnology", isTecnoVisible);
     }
 }
 

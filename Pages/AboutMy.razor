@@ -1,12 +1,12 @@
 ﻿@inject IJSRuntime JS
 
 <div class="aboutme">
-   
-    <div class="textaboutme" @onclick="ToggleImage">
-        <h1>Hacerca de mi</h1>
-    </div>
-
     <div class="imgaboutme"></div>
+    <div class="conttext">
+        <div class="textaboutme" @onclick="ToggleImage">
+            <h1>Acerca de mí</h1>
+        </div>
+    </div>
     
 </div>
 
@@ -18,7 +18,7 @@
     private async Task ToggleImage()
     {
         isImageVisible = !isImageVisible;
-        await JS.InvokeVoidAsync("toggleImage", isImageVisible);
+        await JS.InvokeVoidAsync("toggleAboutme", isImageVisible);
     }
 }
 

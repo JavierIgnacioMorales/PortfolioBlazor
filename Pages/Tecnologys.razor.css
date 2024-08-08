@@ -1,25 +1,52 @@
-﻿.tecnology {
+﻿
+.tecnology {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: #B39980;
+    background-color: #1C1C1C;
     overflow: hidden;
+    position: relative;
+}
+
+.alltecnology {
+    width: 80%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    left: -80%;
+    transition: left 3s ease;
+    z-index: 3;
+}
+
+.contimagen {
+    width: 100%;
+    height: 100%;
+    transition: width 3s ease;
+    z-index: 1;
+    position: absolute;
+    right: 0;
 }
 
 .imgtecnology {
-    order: 1;
-    width: 0%;
-    height: 100vh;
-    background: left no-repeat fixed url("/assets/img-tecnologias.jpg");
+    width: 100%;
+    height: 100%;
+    background: right no-repeat fixed url("/assets/img-tecnologias.jpg");
     background-size: contain;
-    transition: width 3s ease;
 }
 
 .texttecnology {
-    order: 2;
-    width: 100%;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background-color: #383838;
+    color:#FFF;
     cursor: pointer;
-    transition: width 3s ease;
+    transition: left 3s ease, width 3s ease;
+    z-index: 2;
+    position: absolute;
+    left: 0;
 }

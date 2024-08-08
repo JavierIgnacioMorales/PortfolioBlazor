@@ -2,12 +2,12 @@
 
 
 
-window.toggleImage = function (isVisible) {
+window.toggleAboutme = function (isVisible) {
     var image = document.querySelector('.imgaboutme');
-    var text = document.querySelector('.textaboutme');
+    var text = document.querySelector('.conttext');
     if (isVisible) {
         image.style.width = '100%';
-        text.style.width = '25%';
+        text.style.width = '20%';
     } else {
         image.style.width = '0%';
         text.style.width = '100%';
@@ -16,12 +16,25 @@ window.toggleImage = function (isVisible) {
 
 window.toggleProyects = function (isVisible) {
     var proyects = document.querySelector('.proyectos');
-    var image = document.querySelector('.imgproyects');
     if (isVisible) {
-        proyects.style.width = '100%';
-        image.style.width = '0%';
+        proyects.style.left = '30%';
+        proyects.style.width = '70%';
     } else {
         proyects.style.width = '0%';
-        image.style.width = '100%';
+        proyects.style.left = '0%';
     }
 }
+
+window.toggleTecnology = function (isVisible) {
+    var text = document.querySelector('.texttecnology');
+    var conttec = document.querySelector('.alltecnology');
+    if (isVisible) {
+        conttec.style.left = '0';
+        text.style.left = '80%';
+        text.style.width = '20%';
+    } else {
+        conttec.style.left = '-80%';
+        text.style.left = '0';
+        text.style.width = '40%';
+    }
+};
