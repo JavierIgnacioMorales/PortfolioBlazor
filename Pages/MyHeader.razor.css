@@ -9,7 +9,7 @@
 }
 .imgheader {
     width: 100%;
-    height:100vh;
+    height: 100%;
     background: right no-repeat fixed url("/assets/cara.jpg");
     background-size: contain;
     position: absolute;
@@ -20,5 +20,16 @@
     z-index: 1;
     margin-left: 50px;
 }
-
+.textheader h1{
+    transition: font-size 1s ease;
+}
+.textheadervert {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -0.5em;
+}
 

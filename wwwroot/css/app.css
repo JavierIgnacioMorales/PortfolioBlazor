@@ -4,3 +4,33 @@
     box-sizing:border-box;
 }
 
+@media only screen and (max-width: 1300px) {
+    .textheader h1 {
+        font-size: 32px !important;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .textheader h1 {
+        font-size: 20px !important;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    .textheader h1 {
+        display: none;
+    }
+    .textheadervert {
+        display: block !important;
+    }
+    .conttextvertical {
+        display: flex !important;
+    }
+    .conttext {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 700px)  {
+    .textheader h1 {
+        font-size: 2px !important;
+    }
+}
+

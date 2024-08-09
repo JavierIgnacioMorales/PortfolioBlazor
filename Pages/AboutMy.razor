@@ -7,18 +7,29 @@
             <h1>Acerca de mí</h1>
         </div>
     </div>
+    <div class="conttextvertical">
+        <div class="textaboutmevert" @onclick="ToggleImagevert">
+            <h1>Acerca de mí</h1>
+        </div>
+    </div>
     
 </div>
 
 
 @code {
     private bool isImageVisible = false;
+    private bool isImageVisiblevert = false;
     private ElementReference imageRef;
 
     private async Task ToggleImage()
     {
         isImageVisible = !isImageVisible;
         await JS.InvokeVoidAsync("toggleAboutme", isImageVisible);
+    }
+    private async Task ToggleImagevert()
+    {
+        isImageVisiblevert = !isImageVisiblevert;
+        await JS.InvokeVoidAsync("toggleAboutmevert", isImageVisiblevert);
     }
 }
 

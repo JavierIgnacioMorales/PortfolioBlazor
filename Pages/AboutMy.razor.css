@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+
     background-color:#FFF;
     overflow: hidden;
 }
@@ -19,10 +19,28 @@
     height: 100%;
     display: flex;
     align-items: center;
+    text-align:center;
+    padding:20px;
     justify-content: center;
     background-color: #545454;
     transition: width 3s ease;
 }
 .textaboutme {
+    cursor: pointer;
+}
+
+/*vert*/
+
+.conttextvertical {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+    background-color: red;
+    transition: height 3s ease;
+}
+
+.textaboutmevert {
     cursor: pointer;
 }
