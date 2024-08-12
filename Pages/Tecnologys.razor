@@ -12,18 +12,37 @@
      <div class="contimagen">
         <div class="imgtecnology"></div> 
     </div> 
-    
+</div>
+
+<div class="tecnologyvert">
+    <div class="alltecnologyvert">
+        <h1>acá las tecnologías</h1>
+    </div>
+    <div class="conttexttecvert">
+        <div class="texttecnology" @onclick="toggleTecnologyvert">
+            <h1>Herramientas que manejo</h1>
+        </div>
+    </div>
+    <div class="contimagenvert">
+        <div class="imgtecnology"></div>
+    </div>
 </div>
 
 
 @code {
     private bool isTecnoVisible = false;
-    private ElementReference imageRef;
+    private bool isTecnoVisiblevert = false;
 
     private async Task toggleTecnology()
     {
         isTecnoVisible = !isTecnoVisible;
         await JS.InvokeVoidAsync("toggleTecnology", isTecnoVisible);
+    }
+
+    private async Task toggleTecnologyvert()
+    {
+        isTecnoVisiblevert = !isTecnoVisiblevert;
+        await JS.InvokeVoidAsync("toggleTecnologyvert", isTecnoVisiblevert);
     }
 }
 

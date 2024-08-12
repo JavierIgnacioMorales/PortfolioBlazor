@@ -7,19 +7,22 @@
             <h1>Acerca de mí</h1>
         </div>
     </div>
-    <div class="conttextvertical">
+</div>
+
+<div class="aboutmevert">
+    <div class="conttextvert">
         <div class="textaboutmevert" @onclick="ToggleImagevert">
             <h1>Acerca de mí</h1>
         </div>
     </div>
-    
+    <div class="imgaboutmevert"></div>
 </div>
 
 
 @code {
     private bool isImageVisible = false;
     private bool isImageVisiblevert = false;
-    private ElementReference imageRef;
+    //private ElementReference imageRef;
 
     private async Task ToggleImage()
     {

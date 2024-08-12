@@ -12,11 +12,12 @@
 .alltecnology {
     width: 80%;
     height: 100%;
-    background-color: red;
+    background-color: #1C1C1C;
     position: absolute;
     left: -80%;
     transition: left 3s ease;
     z-index: 3;
+    color:#FFF;
 }
 
 .contimagen {
@@ -42,14 +43,79 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: blue;
+    background-color: #545454;
     color: #FFF;
     transition: left 3s ease, width 3s ease;
     z-index: 2;
     position: absolute;
     left: 0;
 }
+
 .texttecnology {
+    cursor: pointer;
+    left: 0;
+    transition: left 3s ease;
+}
+
+
+/*vert*/
+
+
+
+.tecnologyvert {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    background-color: #FFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.alltecnologyvert {
+    width: 100%;
+    height: 80%;
+    background-color: #1C1C1C;
+    position: absolute;
+    top: -80%;
+    transition: top 3s ease;
+    z-index: 3;
+    color:#FFF;
+}
+
+.contimagenvert {
+    width: 100%;
+    height: 100%;
+    transition: width 3s ease;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+.imgtecnology {
+    width: 100%;
+    height: 100%;
+    background: right no-repeat fixed url("/assets/img-tecnologias.jpg");
+    background-size: contain;
+}
+
+.conttexttecvert {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #545454;
+    color: #FFF;
+    transition: top 3s ease, height 3s ease;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+.texttecnologyvert {
     cursor: pointer;
     left: 0;
     transition: left 3s ease;

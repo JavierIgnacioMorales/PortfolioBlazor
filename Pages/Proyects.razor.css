@@ -11,6 +11,7 @@
     display: inline-grid;
     width: 30%;
     height: 100%;
+    padding:10px;
     align-items: center;
     background-color: #FFF;
     text-align: center;
@@ -23,7 +24,8 @@
 .proyectos {
     width: 0%;
     height: 100%;
-    background-color: green;
+    background-color: #383838;
+    color:#FFF;
     transition: width 3s ease, left 3s ease;
     position: absolute;
     left: 0;
@@ -41,4 +43,53 @@
     z-index:1;
 }
 
+
+/*vert*/
+
+.proyectsvert {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    background-color: #FFF;
+    position: relative;
+}
+
+.textcontprovert {
+    display: inline-grid;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    background-color: #FFF;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+}
+
+.textproyects {
+    cursor: pointer;
+}
+
+.proyectosvert {
+    width: 100%;
+    height: 0%;
+    background-color: #383838;
+    color:#FFF;
+    transition: height 3s ease, top 3s ease;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.imgproyectsvert {
+    width: 100%;
+    height: 80%;
+    background: right no-repeat fixed url("/assets/img-proyectos.jpg");
+    background-size: contain;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    /*transition: width 3s ease;*/
+    z-index: 1;
+}
 

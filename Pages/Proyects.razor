@@ -6,19 +6,35 @@
             <h1>Algunos proyectos</h1>
         </div>
     </div>
-    <div class="proyectos">Hola acá van los proyectos</div>
+    <div class="proyectos">Hola, acá van los proyectos</div>
     <div class="imgproyects"></div>
 </div>
 
 
+<div class="proyectsvert">
+    <div class="textcontprovert">
+        <div class="textproyects" @onclick="ToggleProyectsvert">
+            <h1>Algunos proyectos</h1>
+        </div>
+    </div>
+    <div class="proyectosvert">Hola, acá van los proyectos</div>
+    <div class="imgproyectsvert"></div>
+</div>
+
 @code {
     private bool isProyectsVisible = false;
-    private ElementReference proyectsRef;
+    private bool isProyectsVisiblevert = false;
 
     private async Task ToggleProyects()
     {
         isProyectsVisible = !isProyectsVisible;
         await JS.InvokeVoidAsync("toggleProyects", isProyectsVisible);
+    }
+
+    private async Task ToggleProyectsvert()
+    {
+        isProyectsVisiblevert = !isProyectsVisiblevert;
+        await JS.InvokeVoidAsync("toggleProyectsvert", isProyectsVisiblevert);
     }
 }
 

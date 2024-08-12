@@ -1,36 +1,84 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Abhaya Libre', sans-serif;
 }
+@media only screen and (max-width: 1580px) {
+    .textheader p {
+        font-size: 80px !important;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .textheader p {
+        font-size: 50px !important;
+    }
 
-@media only screen and (max-width: 1300px) {
-    .textheader h1 {
-        font-size: 32px !important;
+    .texttecnology h1 {
+        font-size: 28px !important;
     }
 }
-@media only screen and (max-width: 1130px) {
-    .textheader h1 {
-        font-size: 20px !important;
+@media only screen and (max-width: 1170px) {
+    .textheader p {
+        font-size: 40px !important;
     }
 }
-@media only screen and (max-width: 1030px) {
-    .textheader h1 {
+@media only screen and (max-width: 1100px) {
+    .textheader p {
         display: none;
     }
     .textheadervert {
         display: block !important;
     }
-    .conttextvertical {
-        display: flex !important;
+
+
+    /*aboutme*/
+    .aboutme {
+        display:none !important;
     }
-    .conttext {
+    .aboutmevert{
+        display:block !important;
+    }
+
+    /*proyects*/
+    .proyects{
+        display:none !important;
+    }
+    .proyectsvert {
+        display:block !important;
+    }
+
+    /*tecnology*/
+    .tecnology {
         display: none !important;
     }
+
+    .tecnologyvert {
+        display: block !important;
+    }
 }
-@media only screen and (max-width: 700px)  {
-    .textheader h1 {
-        font-size: 2px !important;
+
+@media only screen and (max-width: 950px) {
+    .textheadervert {
+        left: 80% !important;
+    }
+
+    .textheadervert p {
+        font-size: 40px !important;
+        font-family: "Abhaya Libre", serif;
+        font-weight: 800;
+        font-style: normal;
+        transition: font-size 1s ease;
+    }
+}
+
+@media only screen and (max-width: 640px)  {
+    .textheadervert {
+        margin-top: 160px !important;
+        left: 75% !important;
+    }
+    .textheadervert p {
+        font-size: 35px !important;
     }
 }
 

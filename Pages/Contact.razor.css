@@ -10,46 +10,48 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-        'links links links form form form form text text text'; 
+        'links links links form form form form form text text'; 
     grid-template-rows: 1fr; 
     grid-template-columns: repeat(10, 1fr);
     height: 100%;
     width: 100%; 
 }
 
-    .grid-container > div {
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 30px;
-        height: 100%; 
-        width: 100%; 
-    }
+.grid-container > div {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    height: 100%; 
+    width: 100%; 
+}
 
 .contlinks {
-    background-color: red;
+    background-color: #707070;
     grid-area: links;
 }
 
 .contmail {
-    background-color: green;
+    background-color: #FFF;
     grid-area: form;
 }
 
-.textcontact {
-    background-color: blue;
+.titlecontact {
+    background-color: #383838;
+    color:#FFF;
     grid-area: text;
 }
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1000px){
     .grid-container {
         display: grid;
         grid-template-areas:
             'text text text text text text text text text text'
-            'links links links links links form form form form form';
-        grid-template-rows: 100px 1fr;
+            'form form form form form form form form form form'
+            'links links links links links links links links links links';
+        grid-template-rows: 10% 60% 30%;
         /*grid-template-columns: repeat(10, 1fr);*/
         height: 100%;
         width: 100%;
