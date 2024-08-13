@@ -16,24 +16,29 @@ window.onscroll = function () {
 
 window.toggleAboutme = function (isVisible) {
     var image = document.querySelector('.imgaboutme');
+    var texto = document.querySelector('.textoaboutme');
     var text = document.querySelector('.conttext');
-    var textvert = document.querySelector('.conttextvertical');
+    /*var textvert = document.querySelector('.conttextvertical');*/
     if (isVisible) {
-        image.style.width = '100%';
+        image.style.width = '80%';
+        texto.style.width = '30%';
         text.style.width = '20%';
-        textvert.style.height = '20%';
+        /*textvert.style.height = '20%';*/
     } else {
         image.style.width = '0%';
+        texto.style.width = '0%';
         text.style.width = '100%';
-        textvert.style.height = '100%';
+        /*textvert.style.height = '100%';*/
     }
 };
 
 window.toggleAboutmevert = function (isVisible) {
     var image = document.querySelector('.imgaboutmevert');
     var text = document.querySelector('.conttextvert');
+    var cont = document.querySelector('.contimgtextvert');
     if (isVisible) {
         image.style.height = '80%';
+        cont.style.height= '100%';
         text.style.height = '20%';
     } else {
         image.style.height = '0%';

@@ -31,7 +31,6 @@
         display: block !important;
     }
 
-
     /*aboutme*/
     .aboutme {
         display:none !important;
@@ -65,10 +64,26 @@
 
     .textheadervert p {
         font-size: 40px !important;
-        font-family: "Abhaya Libre", serif;
-        font-weight: 800;
-        font-style: normal;
-        transition: font-size 1s ease;
+    }
+
+    .imgaboutmevert {
+        background-position-y: 150px !important;
+        background-position-x: 50px !important;
+    }
+}
+
+
+@media (max-width: 700px) and (min-height: 600px) {
+    .textheader {
+        margin-top: 70px !important;
+    }
+    .textheader p {
+        display: block;
+        font-size: 80px !important;
+    }
+
+    .textheadervert {
+        display: none !important;
     }
 }
 
@@ -79,6 +94,12 @@
     }
     .textheadervert p {
         font-size: 35px !important;
+    }
+    .imgaboutmevert {
+        background-position-y: 300px !important;
+    }
+    .textoaboutmevert {
+        top: 175px !important;
     }
 }
 
