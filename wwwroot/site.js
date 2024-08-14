@@ -5,7 +5,7 @@ window.onscroll = function () {
     //var navbar = document.querySelector('.navbar');
     var navbarTitle = document.querySelector('.titulobarra');
 
-    if (window.scrollY > (headerHeight - 200) ) {
+    if (window.scrollY > (headerHeight - 80) ) {
         //navbar.classList.add('visible');
         navbarTitle.classList.add('visible');
     } else {
@@ -18,17 +18,14 @@ window.toggleAboutme = function (isVisible) {
     var image = document.querySelector('.imgaboutme');
     var texto = document.querySelector('.textoaboutme');
     var text = document.querySelector('.conttext');
-    /*var textvert = document.querySelector('.conttextvertical');*/
     if (isVisible) {
-        image.style.width = '80%';
+        image.style.width = '70%';
         texto.style.width = '30%';
-        text.style.width = '20%';
-        /*textvert.style.height = '20%';*/
+        text.style.width = '30%';
     } else {
         image.style.width = '0%';
         texto.style.width = '0%';
         text.style.width = '100%';
-        /*textvert.style.height = '100%';*/
     }
 };
 

@@ -21,10 +21,9 @@
 }
 .textheader {
     position: fixed;
-    margin-top: 200px;
     z-index: -18;
-    margin-left: 50px;
-
+    margin-left: 5vh;
+    width:40%
 }
 
 .textheader p {

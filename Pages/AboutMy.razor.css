@@ -16,7 +16,7 @@
     transition: width 3s ease;
     z-index: -2;
     top:20%;
-    left:calc(45% );
+    left:65%;
     text-align:left;
 }
 .textoaboutme p {
@@ -28,11 +28,12 @@
 .imgaboutme {
     width: 0%;
     height: 100%;
-    background: left no-repeat fixed url("/assets/mate.jpg");
+    background: no-repeat fixed url("/assets/mate.jpg");
+    background-position-x: 20vw;
     background-size: contain;
-    transition: width 3s ease;
-    opacity:0.5;
-    z-index:-3;
+    transition: width 3s ease, background-position-x 3s ease;
+    opacity: 0.5;
+    z-index: -3;
 }
 .conttext {
     width:100%;
