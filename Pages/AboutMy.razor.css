@@ -29,9 +29,10 @@
     width: 0%;
     height: 100%;
     background: no-repeat fixed url("/assets/mate.jpg");
-    background-position-x: 20vw;
+    background-position-y: 0%;
+    background-position-x: 40%;
     background-size: contain;
-    transition: width 3s ease, background-position-x 3s ease;
+    transition: width 1s ease, background-position-x 1s ease;
     opacity: 0.5;
     z-index: -3;
 }
@@ -67,15 +68,14 @@
     display: flex;
     position: relative;
 }
-
 .imgaboutmevert {
     width: 100%;
     height: 0%;
-    background: no-repeat fixed url("/assets/mateleft.jpg");
-    background-position-y: 70px;
-    background-position-x: 0px;
+    background: no-repeat fixed url("/assets/mate.jpg");
+    background-position-y: 0%;
+    background-position-x: 40%;
     background-size: contain;
-    transition: height 1s ease,width 1s ease, background-position-y 1s ease, background-position-x 1s ease;
+    transition: width 1s ease, background-position-y 1s ease, background-position-x 1s ease;
     opacity: 0.5;
 }
 .textoaboutmevert {

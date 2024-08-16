@@ -10,9 +10,6 @@
         font-size: 28px !important;
     }
 
-    .imgaboutme {
-        background-position-x: 10vw !important;
-    }
 }
 @media (max-width: 1100px) {
     
@@ -54,17 +51,38 @@
     .textheader {
         margin-top: 8vh !important;
     }
+
+    /*aboutme*/
+    .textoaboutmevert {
+        top: 20vh !important;
+    }
+
+    /*proyect*/
+    .imgproyectsvert {
+        background-position-x: 15% !important;
+        background-position-y: 40% !important;
+    }
 }
 @media (min-width: 1023px) and (max-height:800px) {
     .textheader {
        margin-top: 25vh !important;
     }
+
+    /*aboutme*/
+    .textoaboutmevert p {
+        font-size: calc(10px + 2.5vw) !important;
+    }
 }
 @media (max-width: 950px) {
 
-    .imgaboutmevert {
-        background-position-y: 150px !important;
-        background-position-x: 50px !important;
+    /*.imgaboutmevert {
+        background-position-y: 50% !important;
+        background-position-x: 50% !important;
+    }
+*/
+    .imgproyectsvert {
+        background-position-x: 50% !important;
+        background-position-y: 80% !important;
     }
 }
 
@@ -76,6 +94,15 @@
     .textheader p {
         display: block;
         font-size: 80px !important;
+    }
+
+    /*aboutme*/
+    .imgaboutmevert {
+        background-position-y: 25vh !important;
+    }
+
+    .textoaboutmevert {
+        top: 15vh !important;
     }
 }
 @media (max-width: 600px) and (min-height: 750px) {
@@ -89,24 +116,29 @@
     }
 }
 @media (min-width: 700px) and (max-width: 1000px) and (max-height: 1400px) {
+    /*header*/
     .textheader {
         margin-top: 2% !important;
     }
-
     .textheader p {
         font-size: calc(80px + 5vh ) !important;
     }
+
+    /*aboutme*/
+    .imgaboutmevert {
+        background-position-y: 20vh !important;
+    }
+    .textoaboutmevert {
+        top: 10vh !important;
+    }
 }
-@media (max-width: 640px) and (min-height:700px) {
+@media (min-width:451px) (max-width: 640px) and (min-height:700px) {
 
     .imgaboutmevert {
         background-position-y: 40vh !important;
     }
     .textoaboutmevert {
         top: 20vh !important;
-    }
-    .textoaboutmevert p {
-        color:red;
     }
 }
 @media (min-width: 500px) and (max-height: 800px) {
@@ -135,5 +167,26 @@
         background-position-y: 35vh !important;
     }
 }
+@media (min-width: 380px) and (max-width: 450px) and (min-height: 700px) {
 
+    /*aboutme*/
+    .textoaboutmevert {
+        top: 20vh !important;
+    }
+
+    .imgaboutmevert {
+        background-position-y: 40vh !important;
+    }
+}
+@media (max-width: 379px) and (min-height: 700px) {
+
+    /*aboutme*/
+    .textoaboutmevert {
+        top: 10vh !important;
+    }
+
+    .imgaboutmevert {
+        background-position-y: 40vh !important;
+    }
+}
 

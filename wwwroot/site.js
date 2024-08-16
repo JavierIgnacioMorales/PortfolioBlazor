@@ -94,7 +94,7 @@ window.toggleTecnologyvert = function (isVisible) {
     } else {
         conttec.style.top = '-80%';
         text.style.top = '0';
-        text.style.heighy = '30%';
+        text.style.height = '30%';
         textint.style.top = '0%';
     }
 };
